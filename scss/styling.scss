@@ -1,0 +1,53 @@
+/* Implementation of the American Red Cross style guide 
+
+LOGO SUITE
+
+"Required 2x clear space is indicated by blue lines. 1x=height and width of one arm of the cross. (...)
+Clear space minimums (shown above with blue lines) are built into the logo files." (Source: brand poster)
+"The button logo is our preferred logo version. The horizontal stacked orientation is our standard treatment,
+and the vertical orientation is available if there are space constraints. (...)
+The logo must have clear space around it. The clear space requirements are built into the logo files. No other design elements (type, other logos, etc.) should invade the clear space."
+https: //www.redcross.org/lp/brand-standards.html
+
+*/
+
+@use "./partials/variables";
+@use "./partials/mixins-for-lists";
+
+.mock-button-logo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    padding: variables.$logo--nav-cross-padding-outside-of-circle;
+
+    svg {
+        height: variables.$logo--cross-height-in-nav;
+        width: variables.$logo--cross-height-in-nav;
+        margin: variables.$logo--nav-cross-padding-inside-of-circle;
+        fill: variables.$clr-primary--red-cross-red-pms-485;
+    }
+}
+
+/* .global-nav is a ul element */
+.global-nav {
+    @include mixins-for-lists.horizontal-list;
+
+    border: 4px solid variables.$clr-neutral--medium-gray-aka-cool-gray-8;
+    /* box-shadow: horizontal offset, vertical offset, blur radius, spread radius, colour; */
+    box-shadow: 4px 24px 40px 1px variables.$clr-primary--pms-cool-gray-11;
+
+    min-height: 4rem;
+    text-decoration: none;
+    font-size: variables.$font-size--h4;
+}
+
+.global-footer {
+    background-color: variables.$clr-neutral--light-gray-aka-cool-gray-3;
+}
+
+.global-footer {
+    ul {
+        @include mixins-for-lists.reset-list;
+    }
+}

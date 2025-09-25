@@ -1,0 +1,71 @@
+/* Implementation of the American Red Cross style guide 
+
+LOGO SUITE
+
+"Required 2x clear space is indicated by blue lines. 1x=height and width of one arm of the cross. (...)
+Clear space minimums (shown above with blue lines) are built into the logo files." (Source: brand poster)
+"The button logo is our preferred logo version. The horizontal stacked orientation is our standard treatment,
+and the vertical orientation is available if there are space constraints. (...)
+The logo must have clear space around it. The clear space requirements are built into the logo files. No other design elements (type, other logos, etc.) should invade the clear space."
+https: //www.redcross.org/lp/brand-standards.html
+
+*/
+/* Digital minimum sizes 
+(As long as minimum size requirements are followed, 
+the button can be separated from the wordmark and scaled on its own.) */
+/* TO DO: a mixin for the min. height and width is recommended.
+Mixins help developers comply with style rules: just @include, and you are compliant! 
+It is possible to use a switch-like syntax, either inside of variables or inside of mixins, I need to check. 
+TO DO: mixin for text colours that can be used. */
+/* Custom sizes */
+/* Implementation of the American Red Cross style guide 
+
+LOGO SUITE
+
+"Required 2x clear space is indicated by blue lines. 1x=height and width of one arm of the cross. (...)
+Clear space minimums (shown above with blue lines) are built into the logo files." (Source: brand poster)
+"The button logo is our preferred logo version. The horizontal stacked orientation is our standard treatment,
+and the vertical orientation is available if there are space constraints. (...)
+The logo must have clear space around it. The clear space requirements are built into the logo files. No other design elements (type, other logos, etc.) should invade the clear space."
+https: //www.redcross.org/lp/brand-standards.html
+
+*/
+/* reset-list and a portion of horizontal-list are taken from https: //sass-lang.com/documentation/at-rules/mixin */
+.mock-button-logo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 5.7142857143px;
+}
+.mock-button-logo svg {
+  height: 40px;
+  width: 40px;
+  margin: 5.7142857143px;
+  fill: #ED1B2E;
+}
+
+/* .global-nav is a ul element */
+.global-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  border: 4px solid #9F9FA3;
+  /* box-shadow: horizontal offset, vertical offset, blur radius, spread radius, colour; */
+  box-shadow: 4px 24px 40px 1px #6D6E70;
+  min-height: 4rem;
+  text-decoration: none;
+  font-size: 1.2135rem;
+}
+
+.global-footer {
+  background-color: #D7D7D8;
+}
+
+.global-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}/*# sourceMappingURL=styling.css.map */

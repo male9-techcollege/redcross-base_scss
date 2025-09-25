@@ -1,0 +1,66 @@
+//LOGO
+
+/* Digital minimum sizes 
+(As long as minimum size requirements are followed, 
+the button can be separated from the wordmark and scaled on its own.) */
+/* TO DO: a mixin for the min. height and width is recommended.
+Mixins help developers comply with style rules: just @include, and you are compliant! 
+It is possible to use a switch-like syntax, either inside of variables or inside of mixins, I need to check. 
+TO DO: mixin for text colours that can be used. */
+$logo--cross-with-padding-min-height: 26px;
+$logo--cross-min-padding-inside-of-circle: calc(26px/7); //air between cross and edge of circle around it
+$logo--cross-min-padding-outside-of-circle: calc(26px/7); //air around circle with cross in it
+$logo--wordmark-min-height: 6px;
+
+/* Custom sizes */
+$logo--cross-height-in-nav: 40px;
+$logo--nav-cross-padding-inside-of-circle: calc($logo--cross-height-in-nav/7); //air between cross and edge of circle around it
+$logo--nav-cross-padding-outside-of-circle: calc($logo--cross-height-in-nav/7); //air around circle with cross in it
+
+//TYPOGRAPHY
+
+//To display information:  
+//Note: the Akzidenz-Grotesk Standard family is not available on fonts.google.com ; I also tried to find it on other sites, and it is not free! https: //www.typewolf.com/akzidenz-grotesk
+$font-family--information: "Akzidenz-Grotesk Standard", Arial, sans-serif;
+$font-weight--information-regular: 400; //aka regular (for body copy; 400 and 700 can be used for headings)
+$font-weight--information-bold: 700; //(400 and 700 can be used for headings; bold or italics for emphasis)
+$font-style--information-italics: italic; //(bold or italics for emphasis)
+$case--information-none: none; //This variable is a style-guide reminder
+$case--information-up: uppercase; //ALL CAPS are allowed, but title case (text-transform: capitalize;) is not allowed
+
+//To display the Red Cross' tone of voice (for storytelling, expressing opinions and calls to action): 
+$font-family--voice: Georgia, serif;
+$font-weight--voice-regular: 400; //aka regular (for body copy and headings)
+$font-weight--voice-bold: 700; //(for body copy and headings; bold or italics for emphasis)
+$font-style--voice-italics: italic; //(bold or italics for emphasis)
+$case--voice-none: none; //This variable is a style-guide reminder: ALL CAPS are not allowed; title case (text-transform: capitalize; ) is also not allowed
+
+$clr-primary--white: #ffffff; //60%
+$clr-primary--pms-cool-gray-11: #6D6E70; //30%
+$clr-primary--red-cross-red-pms-485: #ED1B2E; //10%
+$clr-primary--black: #000000;
+
+$clr-neutral--medium-gray-aka-cool-gray-8: #9F9FA3;
+$clr-neutral--light-gray-aka-cool-gray-3: #D7D7D8;
+
+$clr-secondary--khaki-pms-4535: #E2D7AC;
+$clr-secondary--sand-pms-7530: #B4A996;
+$clr-secondary--gold-pms-130: #ECB731;
+$clr-secondary--safety-green-pms-360: #8EC06C;
+$clr-secondary--forest-green-pms-364: #537B35;
+$clr-secondary--light-blue-pms-290: #C4DFF6;
+$clr-secondary--sky-blue-pms-542: #56A0D3;
+$clr-secondary--classic-blue-aka-pms-proc-blue: #0091CD;
+$clr-secondary--midnight-blue-pms-7692: #004B79;
+$clr-secondary--deep-red-pms-7622: #7F181B;
+
+//LAYOUT
+
+$font-size--root-element: 16px;
+$font-size--small-text: 12px; //For small body copy (styled like news article) and <small> element
+$font-size--h1: calc(1.618rem * 1.618 * 1.618); //4,235801032
+$font-size--h2: calc(1.618rem * 1.618); //2,617924
+$font-size--h3: 1.618rem;
+$font-size--h4: calc(1.618rem * 3 / 4);
+
+$nav-gap: 4rem;

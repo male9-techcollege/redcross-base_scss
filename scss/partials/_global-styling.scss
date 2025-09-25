@@ -1,0 +1,38 @@
+@use "variables";
+
+/* Global styling */
+:root {
+    background-color: variables.$clr-primary--white;
+    color: variables.$clr-primary--pms-cool-gray-11;
+    font-family: variables.$font-family--information;
+    font-size: variables.$font-size--root-element;
+}
+
+main {
+    background-color: variables.$clr-neutral--medium-gray-aka-cool-gray-8;
+}
+
+/* Typography and utility classes */
+h1,
+h2 {
+    color: variables.$clr-primary--red-cross-red-pms-485;
+}
+
+h1 {
+    font-size: variables.$font-size--h1;
+}
+
+h2 {
+    font-size: variables.$font-size--h2;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: variables.$clr-primary--pms-cool-gray-11;
+}
+
+h3 {
+    font-size: variables.$font-size--h3;
+}
