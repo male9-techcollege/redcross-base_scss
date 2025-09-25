@@ -13,6 +13,7 @@ https: //www.redcross.org/lp/brand-standards.html
 
 @use "./partials/variables";
 @use "./partials/mixins-for-lists";
+@use "./partials/global-styling";
 
 .mock-button-logo {
     display: grid;

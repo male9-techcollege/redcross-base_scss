@@ -31,6 +31,59 @@ https: //www.redcross.org/lp/brand-standards.html
 
 */
 /* reset-list and a portion of horizontal-list are taken from https: //sass-lang.com/documentation/at-rules/mixin */
+/* Implementation of the American Red Cross style guide 
+
+LOGO SUITE
+
+"Required 2x clear space is indicated by blue lines. 1x=height and width of one arm of the cross. (...)
+Clear space minimums (shown above with blue lines) are built into the logo files." (Source: brand poster)
+"The button logo is our preferred logo version. The horizontal stacked orientation is our standard treatment,
+and the vertical orientation is available if there are space constraints. (...)
+The logo must have clear space around it. The clear space requirements are built into the logo files. No other design elements (type, other logos, etc.) should invade the clear space."
+https: //www.redcross.org/lp/brand-standards.html
+
+*/
+/* Global styling */
+:root {
+  background-color: #ffffff;
+  color: #6D6E70;
+  font-family: "Akzidenz-Grotesk Standard", Arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  background-color: #9F9FA3;
+}
+
+/* Typography and utility classes */
+h1,
+h2 {
+  color: #ED1B2E;
+}
+
+h1 {
+  font-size: 4.235801032rem;
+}
+
+h2 {
+  font-size: 2.617924rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  color: #6D6E70;
+}
+
+h3 {
+  font-size: 1.618rem;
+}
+
+h4 {
+  font-size: 1.2135rem;
+}
+
 .mock-button-logo {
   display: grid;
   grid-template-columns: 1fr auto;
