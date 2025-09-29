@@ -1,14 +1,14 @@
 @use "variables";
 
 /* reset-list and a portion of horizontal-list are taken from https: //sass-lang.com/documentation/at-rules/mixin */
-@mixin reset-list {
+@mixin reset-list-by-Marie-Pierre-Lessard {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-@mixin horizontal-list {
-    @include reset-list;
+@mixin horizontal-list-by-Marie-Pierre-Lessard {
+    @include reset-list-by-Marie-Pierre-Lessard;
 
     display: flex;
     flex-direction: row;

@@ -15,7 +15,7 @@ https: //www.redcross.org/lp/brand-standards.html
 @use "./partials/mixins-for-lists";
 @use "./partials/global-styling";
 
-.mock-button-logo {
+.mock-button-logo-by-Marie-Pierre-Lessard {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
@@ -30,9 +30,9 @@ https: //www.redcross.org/lp/brand-standards.html
     }
 }
 
-/* .global-nav is a ul element */
-.global-nav {
-    @include mixins-for-lists.horizontal-list;
+/* .global-nav-by-Marie-Pierre-Lessard is a ul element */
+.global-nav-by-Marie-Pierre-Lessard {
+    @include mixins-for-lists.horizontal-list-by-Marie-Pierre-Lessard;
 
     border: 4px solid variables.$clr-neutral--medium-gray-aka-cool-gray-8;
     /* box-shadow: horizontal offset, vertical offset, blur radius, spread radius, colour; */
@@ -43,12 +43,12 @@ https: //www.redcross.org/lp/brand-standards.html
     font-size: variables.$font-size--h4;
 }
 
-.global-footer {
+.global-footer-by-Marie-Pierre-Lessard {
     background-color: variables.$clr-neutral--light-gray-aka-cool-gray-3;
 }
 
-.global-footer {
+.global-footer-by-Marie-Pierre-Lessard {
     ul {
-        @include mixins-for-lists.reset-list;
+        @include mixins-for-lists.reset-list-by-Marie-Pierre-Lessard;
     }
 }
