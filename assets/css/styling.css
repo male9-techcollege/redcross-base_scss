@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Implementation of the American Red Cross style guide 
 
 LOGO SUITE
@@ -15,8 +16,25 @@ https: //www.redcross.org/lp/brand-standards.html
 the button can be separated from the wordmark and scaled on its own.) */
 /* TO DO: a mixin for the min. height and width is recommended.
 Mixins help developers comply with style rules: just @include, and you are compliant! 
-It is possible to use a switch-like syntax, either inside of variables or inside of mixins, I need to check. 
+It is possible to use a switch-like syntax, either inside of variables or inside of mixins: 
+"Maps allow any Sass values to be used as their keys. The==operator is used to determine whether two keys are the same."
+https: //sass-lang.com/documentation/values/maps
+"To help you work with nested maps,
+some map functions support deep operations. For example,
+if you pass multiple keys to map.get(),
+it will follow those keys to find the desired nested map:"
+https: //sass-lang.com/documentation/modules/map
+An array is called a list in SCSS.
+"The index 1 indicates the first element of the list. (...) Sass also makes it easy to refer to the end of a list. The index -1 refers to the last element in a list,
+-2 refers to the second-to-last,
+and so on. (...)
+You can use the list.nth($list, $n) function to get the element at a given index in a list. The first argument is the list itself,
+and the second is the index of the value you want to get out."
+https: //sass-lang.com/documentation/values/lists
 TO DO: mixin for text colours that can be used. */
+/* "Because Sass is a CSS superset, we’re matching CSS’s syntax by redefining / to be only a separator. / will be treated as a new type of list separator, similar to how,
+works today. Division will instead be written using the new math.div() function. This function will behave exactly the same as / does today. This deprecation does not affect uses of / inside calc() expressions."
+https: //sass-lang.com/documentation/breaking-changes/slash-div */
 /* Custom sizes */
 /* Implementation of the American Red Cross style guide 
 
@@ -84,21 +102,21 @@ h4 {
   font-size: 1.2135rem;
 }
 
-.mock-button-logo {
+.mock-button-logo-by-Marie-Pierre-Lessard {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   padding: 5.7142857143px;
 }
-.mock-button-logo svg {
+.mock-button-logo-by-Marie-Pierre-Lessard svg {
   height: 40px;
   width: 40px;
   margin: 5.7142857143px;
   fill: #ED1B2E;
 }
 
-/* .global-nav is a ul element */
-.global-nav {
+/* .global-nav-by-Marie-Pierre-Lessard is a ul element */
+.global-nav-by-Marie-Pierre-Lessard {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -113,11 +131,11 @@ h4 {
   font-size: 1.2135rem;
 }
 
-.global-footer {
+.global-footer-by-Marie-Pierre-Lessard {
   background-color: #D7D7D8;
 }
 
-.global-footer ul {
+.global-footer-by-Marie-Pierre-Lessard ul {
   margin: 0;
   padding: 0;
   list-style: none;
